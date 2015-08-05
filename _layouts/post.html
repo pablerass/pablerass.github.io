@@ -36,6 +36,12 @@ layout: default
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
               <span itemprop="name">{{ page.author }}</span>
             </span>
+            {% else %}
+              {% if site.author %}
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ site.author }}</span>
+              </span>
+              {% endif %}
             {% endif %}
             {% if site.google_plus_link %}
               </a>
@@ -66,7 +72,6 @@ layout: default
           <i class="fa fa-tags"></i>
             {{ page.tags | join: ', ' }}
         </small></div>
-
       </div>
 
       {% if site.disqus_account %}
