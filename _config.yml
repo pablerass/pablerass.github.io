@@ -26,8 +26,8 @@ linkedin_link:    https://es.linkedin.com/in/pmorbananos
 #google_plus_link: https://plus.google.com/105692111327986966802
 
 # Footer
-footer_left: "Licensed under &nbsp;<a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\"><i class=\"fa fa-cc\"></i> by 4.0</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/pablerass/pablerass.github.io\">Github Page</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: "Licensed under &nbsp;<a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\"><i class=\"fa fa-cc\"></i>&nbsp; by 4.0</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/pablerass/pablerass.github.io\">GitHub Pages &nbsp;<i class=\"fa fa-github-alt\"></i></a>"
 
 # Build settings
 markdown: redcarpet
