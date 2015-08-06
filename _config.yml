@@ -12,7 +12,10 @@ post_limit: 6
 # Author information
 email:  pablerass@gmail.com
 author: Pablo Mu&ntilde;oz
-about:
+about: >
+  This is my blog, and I use it to write in english, to learn and to
+  enjoy. Read it if you want, extract any information you think could be
+  interesting but contrast the information and get your own conclussions.
 
 # Infrastructure accounts
 google_analytics: "UA-42974454-2"
