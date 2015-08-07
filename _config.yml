@@ -13,9 +13,12 @@ post_limit: 6
 email:  pablerass@gmail.com
 author: Pablo Mu&ntilde;oz
 about: >
-  This is my blog, and I use it to write in english, to learn and to
-  enjoy. Read it if you want, extract any information you think could be
-  interesting but contrast the information and get your own conclussions.
+  <p>And I am a computer engineer and this is my first technological blog.</p>
+
+  <p>I pretend to user this mean to write in English, to learn and to enjoy.
+  Read it if you want, extract any information you think could be interesting
+  but contrast it and get your own conclusions, as you should do always with
+  everything.</p>
 
 # Infrastructure accounts
 google_analytics: "UA-42974454-2"
