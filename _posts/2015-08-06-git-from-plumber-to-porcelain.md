@@ -13,7 +13,7 @@ tags:
 **Pre-note** - I am still working on this post, I will remove this pre-note when
 I consider it completed.
 
-**Note** - If you have already read the [Pro Git][pro-git] *chapter 10*, you can
+**Note** - If you have already read the [Pro Git][pro-git] chapter 10, you can
 avoid this post. If you have not done it yet and you are interested in *Git*, I
 think you should.
 
@@ -29,22 +29,22 @@ Initialized empty Git repository in /home/user/test/.git/
 user@computer [07:59:10] [~/test] [master]
 -> % ls -la
 total 12
-drwx------ 3 user users 4096 ago  7 19:59 .
-drwx------ 4 user users 4096 ago  7 19:59 ..
-drwx------ 7 user users 4096 ago  7 19:59 .git
+drwx------ 3 ... ago  7 19:59 .
+drwx------ 4 ... ago  7 19:59 ..
+drwx------ 7 ... ago  7 19:59 .git
 user@computer [07:59:19] [~/test] [master]
 -> % ls -la .git
 total 40
-drwx------ 7 user users 4096 ago  7 19:59 .
-drwx------ 3 user users 4096 ago  7 19:59 ..
-drwx------ 2 user users 4096 ago  7 19:59 branches
--rw------- 1 user users   92 ago  7 19:59 config
--rw------- 1 user users   73 ago  7 19:59 description
--rw------- 1 user users   23 ago  7 19:59 HEAD
-drwx------ 2 user users 4096 ago  7 19:59 hooks
-drwx------ 2 user users 4096 ago  7 19:59 info
-drwx------ 4 user users 4096 ago  7 19:59 objects
-drwx------ 4 user users 4096 ago  7 19:59 refs
+drwx------ 7 ... ago  7 19:59 .
+drwx------ 3 ... ago  7 19:59 ..
+drwx------ 2 ... ago  7 19:59 branches
+-rw------- 1 ... ago  7 19:59 config
+-rw------- 1 ... ago  7 19:59 description
+-rw------- 1 ... ago  7 19:59 HEAD
+drwx------ 2 ... ago  7 19:59 hooks
+drwx------ 2 ... ago  7 19:59 info
+drwx------ 4 ... ago  7 19:59 objects
+drwx------ 4 ... ago  7 19:59 refs
 {% endhighlight %}
 
 In this post, I intend to cover at least `branches`, `HEAD`, `objects` and
@@ -52,11 +52,11 @@ In this post, I intend to cover at least `branches`, `HEAD`, `objects` and
 *Git* to manage source code versions, branches and everything you do when
 `clone`, `branch` or `checkout` commands are executed.
 
-# Git essence
+# Git internals
 
-It its main essence, Git is a key, value store. The key is a hash value
-calculated using a hash function over the value content. In a simple way, they
-are stored, as files, into the `object` folder.
+If you see it from its internals, *Git* is a key, value store. The key is a hash
+value calculated using a hash function over the value content. In a simple way,
+they are stored, as files, into the `object` folder.
 
 The most basic commands that allows you to manage *Git's* key, value store are
 commonly known as "plumbing" commands in contrast with the more user friendly
