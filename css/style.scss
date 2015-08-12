@@ -199,6 +199,10 @@ ul {
 	.fa-rss:hover {
 		color: $rss;
 	}
+
+	a, a:active {
+		color: $white;
+	}
 }
 
 /* Index */
@@ -330,7 +334,7 @@ ul {
 
 	.links {
 		a, a:active {
-			color: #FFFFFF;
+			color: $white;
 		}
 	}
 
@@ -342,7 +346,7 @@ ul {
 		bottom: 0px;
 
 		a, a:active {
-			color: #FFFFFF;
+			color: $white;
 		}
 
 		a:hover {
