@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="container-fluid index">
-  <div class="row index all-posts">
+<div class="container-fluid single">
+  <div class="row">
 
     <h1 class="header author-header">About me</h1>
 
@@ -18,13 +18,14 @@ layout: default
           {% if site.linkedin_link %}<a href="{{ site.linkedin_link }}" target="_new"><i class="fa fa-linkedin fa-2x"></i></a>{% endif %}
           {% if site.google_plus_link %}<a href="{{ site.google_plus_link }}" target="_new"><i class="fa fa-google-plus fa-2x"></i></a>{% endif %}
           {% if site.stackoverflow_link %}<a href="{{ site.stackoverflow_link }}" target="_new"><i class="fa fa-stack-overflow"></i></a>{% endif %}
-          <a href="feed.xml" target="_new"><i class="fa fa-rss fa-2x"></i></a>
       </div>
     </div>
 
     {% if site.about %}
-    <div class="col-md-12 main content-panel">
-      {{ site.about }}
+    <div class="col-md-12 article">
+      <div class="content-panel content">
+        <span itemprop="articleBody">{{ site.about }}</span>
+      </div>
     </div>
     {% endif %}
   </div>
