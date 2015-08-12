@@ -13,15 +13,18 @@ post_limit: 6
 email:  pablerass@gmail.com
 author: Pablo Mu&ntilde;oz
 about: >
-  <p>I am a computer engineer and this is my first technological blog. Currently
-  I am working in a DevOps possition and this blog posts will talk about that
-  topic. If you are interested, you can find more about me in the links just
-  above this text.</p>
+  <p>I am a computer engineer and this is my first technology blog.</p>
 
-  <p>I pretend to use this mean to write in English, to learn and to enjoy.
-  Read it if you want, extract any information you think could be interesting
-  but contrast it and get your own conclusions, as you should do always with
-  everything.</p>
+  <p>Blog posts will talk about DevOps, agile methodologies, databases,
+  programming or whatever that seemed to me interesting to write about</p>
+
+  <p>I pretend to use this mean to write in English, to learn and to enjoy, not
+  to teach. Read it if you want, extract any information you think could be
+  interesting but contrast it and get your own conclusions, as you should do
+  always with everything.</p>
+
+  <p>If you are interested, you can find more about me in the links just
+  above this text.</p>
 
 # Infrastructure accounts
 google_analytics: "UA-42974454-2"

@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="container-fluid single">
-  <div class="row">
+<div class="container-fluid index">
+  <div class="row index about">
 
     <h1 class="header author-header">About me</h1>
 
@@ -22,10 +22,8 @@ layout: default
     </div>
 
     {% if site.about %}
-    <div class="col-md-12 article">
-      <div class="content-panel content">
-        <span itemprop="articleBody">{{ site.about }}</span>
-      </div>
+    <div class="col-md-12 content-panel content">
+      {{ site.about }}
     </div>
     {% endif %}
   </div>
