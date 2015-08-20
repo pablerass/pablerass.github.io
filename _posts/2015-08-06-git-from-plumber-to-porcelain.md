@@ -31,7 +31,7 @@ user@computer [07:59:10] [~/test] [master]
 total 12
 drwx------ 3 ... ago  7 19:59 .
 drwx------ 4 ... ago  7 19:59 ..
-drwx------ 7 ... ago  7 19:59 .git
+drwx------ 7 ... ago  8 19:59 .git
 user@computer [07:59:19] [~/test] [master]
 -> % ls -la .git
 total 40
@@ -47,24 +47,49 @@ drwx------ 4 ... ago  7 19:59 objects
 drwx------ 4 ... ago  7 19:59 refs
 {% endhighlight %}
 
-In this post, I intend to cover at least `branches`, `HEAD`, `objects` and
-`refs` files and directories. Each of them contains all the information used by
-*Git* to manage source code versions, branches and everything you do when
-`clone`, `branch` or `checkout` commands are executed.
+In this post, I intend to cover at least `branches`, `HEAD`, `index`, `objects`
+and `refs` files and directories. Each of them contains all the information used
+by *Git* to manage source code versions, branches and everything you do when
+`clone`, `commit`, `branch` or `checkout` commands are executed.
 
 # Git internals
 
-If you see it from its internals, *Git* is a key, value store. The key is a hash
-value calculated using a hash function over the value content. In a simple way,
-they are stored, as files, into the `object` folder.
+If you see it from its internals, *Git* is a key, value store. The key is
+calculated using a hash function over the value . In a simple way, the content
+is stored as a file into the `object` folder its file name to represent the key
+value.
+
+There are four types of object Git can store:
+
+* `blobs`:
+* `trees`:
+* `commits`:
+* `tags`:
 
 The most basic commands that allows you to manage *Git's* key, value store are
 commonly known as "plumbing" commands in contrast with the more user friendly
 ones that are referred as "porcelain".
 
-### Plumber commands
+### Managing blob objects
 
-### Joining plumber into porcelain
+### The staging area
 
+### Combining blobs into trees
+
+### Generating commits from trees
+
+# References and branches
+
+# Managing staging area
+
+# Joining plumber into porcelain
+
+### Commit
+
+### Checkout
+
+### Revert
+
+### Merge
 
 [pro-git]: https://git-scm.com/book/en/v2
