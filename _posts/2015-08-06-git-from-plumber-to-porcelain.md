@@ -17,10 +17,12 @@ I consider it completed.
 
 The most basic commands that allows you to manage *Git's* internals, are
 commonly known as _plumbing_ commands in contrast with the more user friendly
-ones that are referred as _porcelain_. This post we will begin talking about
-that low level _plumbing_ commands and how are they used to manage repository
-objects and references. With this information we will try to dissect, analyze
-and create the more complex _porcelain_ commands with our own scripts.
+ones that are referred as _porcelain_.
+
+This post we will begin talking about that low level _plumbing_ commands and how
+are they used to manage repository objects and references. With this information
+we will try to dissect, analyze and create the more complex _porcelain_ commands
+with our own scripts.
 
 # An empty *Git* repository
 
@@ -141,7 +143,7 @@ symbolic reference is used.
 
 Despite we have talk about both commands, `reset` and `checkout` are enough
 important to deep inside them. There is a [great section][atl-tut-check-reset]
-of the great *Atlassian* [Git tutorial][atlassian-tutorial]
+of the great *Atlassian* [*Git* tutorial][atlassian-tutorial]
 
 # Materials
 
@@ -154,7 +156,7 @@ was recorded and published. Two drawbacks, it is in Spanish and it is terribly
 long.
 
 [talk-repo]: https://github.com/pablerass/talk-from-plumber-to-porcelain
-[talk-video]: https://www.google.com/+PabloMu&ntilde;ozOrb
+[talk-video]: https://www.google.com/+PabloMu&ntilde;ozOrb/posts/4dk94iYRe7K
 [pro-git]: https://git-scm.com/book/en/v2
 [atlassian-tutorial]: https://www.atlassian.com/git/tutorials
-[atl-tut-check-reset]: https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/
+[atl-tut-check-reset]: https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
