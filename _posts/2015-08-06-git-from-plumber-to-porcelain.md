@@ -2,7 +2,7 @@
 layout:     post
 title:      From plumber to porcelain
 date:       06/08/2015 18:45:00
-summary:    Git approximation from the basis.
+summary:    Git approximation from the basis
 categories: git
 thumbnail:  code-fork
 tags:
@@ -57,19 +57,38 @@ drwx------ 4 ... ago  7 19:59 refs
 Being *Git* a distributed control version system, this folder represents a full
 individual consistent repository.
 
+In this folder structure we can distinguish the three main parts that represents
+a working repository:
+
+* The _repository_: As we are talking of an distributed CVS, everything
+  contained inside the `.git` directory represents a full individual consistent
+  directory.
+
+* The _working directory_: Contains the directory and file structure extracted
+  from the _repository_ and managed by the user. Is used to access and modify
+  _repository_ content.
+
+* The _staging area_: Represented by the `index` file placed in the root of
+  `.git` directory, act as a site of interchange of files between the _working
+  directory_ and the _repository_ itself. The staging area also represents the
+  content of a commit if it where created in this point in time.
+
 In this post, I intend to cover at least `HEAD`, `index`, `objects` and `refs`
-files and directories, despite `index` is not yet created. Each of them contains
-all the information used by *Git* to manage file  versions, branches and
-everything is done when `commit`, `branch` or `checkout` commands are executed.
-However we will not talk about `pull`, `push` and `clone` commands, that are
-used for synchronizing different repositories.
+files and directories. Each of them contains all the information used by *Git*
+to manage file  versions, branches and everything is done when `commit`,
+`branch` or `checkout` commands are executed.  However we will not talk about
+`pull`, `push` and `clone` commands, that are used for synchronizing different
+repositories.
 
 # Git internals
 
 If you see it from its internals, *Git* is a _key-value_ store of objects. The
 key is calculated using a _sha_ function over the value adding some meta data.
 In a simple way, the content is stored as a file into the `object` folder using
-its name to represent the key value.
+its name to represent the key value. Repository objects contains all information
+of the repository full history, with its directories and files.
+
+# Git objects
 
 There are four types of object *Git* can store:
 
@@ -78,25 +97,49 @@ There are four types of object *Git* can store:
 * `commits`: Represents a repository point in history.
 * `tags`: Specifies version and adds information to a certain commit.
 
-# Git objects
+For my own convenience, we will not talk about `tags` in this post.
+
+### Object hash calculation
+
+`git hash-object <file>`
+`git hash-object --stdin`
+`git hash-object -w <file> [-t commit]`
 
 ### Managing blob objects
 
 `git hash-object <file>`
 `git hash-object --stdin`
-`git hash-object -w <file>`
-`git cat-file -t blob <hash>`
+`git hash-object -w <file> [-t commit]`
+`git cat-file -p <hash>`
+
+As can be sown, no information about file path is stored into a `blob` object,
 
 ### Combining blobs into trees
 
-`git update-index --add <file>`
-`git update-index --remove <file>`
+All interchange of data between objects and the _working directory_ is done
+using the staging area. So, despite the `blob` contents can be added directly to
+the repository using `hash-object` command, the unique way to create trees is
+through it.
+
+To add and remove files from the staging area, `update-index` plumbing command,
+similar to `add`, is used.
+
+.. code-block:: bash
+
+    git update-index [--add|--remove] <file>
+
 `git write-tree`
 `git ls-tree`
 
 ### The staging area
 
-`git ls-files -s`
+The staging area represented and managed using the `index` file in `.git`
+directory and can be queried executing the `git ls-files -s` command in the root
+of the _working directory_.
+
+As said before, the _working directory_ is everything that is outside the
+`.git`directory.
+
 `git ls-files -s --porcelain`
 
 ### Generating commits from trees
