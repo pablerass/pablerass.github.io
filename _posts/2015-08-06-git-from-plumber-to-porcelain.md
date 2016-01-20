@@ -68,10 +68,11 @@ a working repository:
   from the _repository_ and managed by the user. Is used to access and modify
   _repository_ content.
 
-* The _staging area_: Represented by the `index` file placed in the root of
+* The _staging area_: Represented by an `index` file placed in the root of
   `.git` directory, act as a site of interchange of files between the _working
   directory_ and the _repository_ itself. The staging area also represents the
-  content of a commit if it where created in this point in time.
+  content of a commit if it where created in this point in time. The `index`
+  does not exists when the repository has been just created.
 
 In this post, I intend to cover at least `HEAD`, `index`, `objects` and `refs`
 files and directories. Each of them contains all the information used by *Git*
