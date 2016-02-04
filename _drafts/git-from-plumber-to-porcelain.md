@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      From plumber to porcelain
-date:       06/08/2015 18:45:00
+date:
 summary:    Git approximation from the basis
 categories: git
 thumbnail:  code-fork
@@ -9,9 +9,6 @@ tags:
   - git
   - code
 ---
-
-**Pre-note** - I am still working on this post, I will remove this pre-note when
-I consider it completed.
 
 # Plumber and porcelain
 
