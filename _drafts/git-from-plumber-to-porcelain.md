@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      From plumber to porcelain
-date:       2016-02-04 21:34:2016
+date:       2016-02-04 21:34:16
 summary:    Git approximation from the basis
 categories: git
 thumbnail:  code-fork
