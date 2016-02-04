@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Rock Paper Scissors Spock Lizard planning
-date:       2016-02-04 21:17:34
+date:       2016-02-04 19:17:34
 summary:    Alternative to planning poker
 categories: agile
 thumbnail:  paper-plane
