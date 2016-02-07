@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Rock Paper Scissors Spock Lizard planning
+title:      Rock Paper Scissors Lizard Spock planning
 date:       2016-02-04 19:17:34
 summary:    Alternative to planning poker
 categories: agile
@@ -16,14 +16,14 @@ Last month during a long tedious and boring [PI planning][pi-planning] team
 estimation process, we decide to avoid usage of [planning poker][planning-poker]
 cards and turn everything into a more dynamic and table-free method.
 Everything began as a joke and we ended finishing our journey using it and
-completely satisfied with the result. We called it, [*Rock Paper Scissors Spock
-Lizard*][big-bang-video] planning.
+completely satisfied with the result. We called it, [*Rock Paper Scissors Lizard
+Spock*][big-bang-video] planning.
 
 ### How
 
 The method is as simple as it sounds. Everyone acts like if they were playing
 and showing, at the same time, its estimations using the following game gestures
-associated with Fibonacci sequence values.
+associated with *Fibonacci sequence* values.
 
 Gesture | Value
 --------|------:
