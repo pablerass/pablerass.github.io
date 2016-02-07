@@ -22,8 +22,8 @@ Spock*][big-bang-video] planning.
 ### How
 
 The method is as simple as it sounds. Everyone acts like if they were playing
-and showing, at the same time, its estimations using the following game gestures
-associated with *Fibonacci sequence* values.
+the game and showing, at the same time, its estimations using the following
+gestures associated with *Fibonacci sequence* values.
 
 Gesture | Value
 --------|------:
@@ -37,13 +37,13 @@ Lizard | 8
 
 ### What
 
-The final estimation where concreted after a minimal discussion about them.
-Because this estimations can not be accurate, consensus was easily obtained.
+Because this kind of estimations can not be accurate, consensus was easily
+obtained. The final ones where concreted after a minimal discussion about them.
 
 Of course, this method uses a limited set of values and maybe it will not fit
 everyone needs. In our case, we rarely have more than eight points for a
-history. Anyway, add some new gestures or change these for a less freak ones
-do not seems like a complicated task.
+history. Anyway, to add some new gestures or to change these for a less freak
+ones do not seem like a complicated task.
 
 
 **Sidenote** - The diagram is *hotlinked* from
