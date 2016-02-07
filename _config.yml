@@ -42,14 +42,18 @@ footer_left: "Licensed under &nbsp;<a rel=\"license\" href=\"http://creativecomm
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/pablerass/pablerass.github.io\">GitHub Pages &nbsp;<i class=\"fa fa-github-alt\"></i></a>"
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
 permalink: pretty
 exclude: [vendor]
 
 # Plugins
 gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-mentions
