@@ -122,10 +122,7 @@ through it.
 To add and remove files from the staging area, `update-index` plumbing command,
 similar to `add`, is used.
 
-.. code-block:: bash
-
-    git update-index [--add|--remove] <file>
-
+`git update-index [--add|--remove] <file>`
 `git write-tree`
 `git ls-tree`
 
