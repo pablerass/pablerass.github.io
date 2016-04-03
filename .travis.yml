@@ -1,4 +1,15 @@
 language: ruby
 rvm:
-  - 2.0.0
-script: "bundle exec jekyll build --drafts"
+- 2.0.0
+script: $scripts_dir/build.sh
+deploy:
+  provider: heroku
+  buildpack: ruby
+  api_key: $heroku_api_key
+  app:
+    master: dontlearnthis-staging
+    develop: dontlearnthis-develop
+env:
+  global:
+    scripts_dir: ./scripts
+    heroku_api_key: vT4ercvdwiV+oSYR45YU6FmzuN5rAlzWFiFf/LHOywbdf5/lIv1LC3A/VG6OcSV9K3FAbrXxRSHDDfL/tbi2o7BNY775dteTqTNJkOC2HuZYWDUp8H1GGIfO/P7JcltYO+C7VCT9n23llWt0BgyXkbv2wPGb3/9bK9R/3AoD/OISwtwIjlJec5WmQ5oCLEig+v+V3xurAdkw7y2Co8DBBhwGUry2ljBAgZQPD8svS8oaMR1HpNe3MfLyTlmYkf92zEmOOMRffBVbE+87ovKfWQkpxflMWPFyQI+Q2Gx9J/Eo7BTpmtkyHnbpBHVujAD2eBxoYYjb1p5AS7NLovqBnt6/Z1jnrIjwC3s2Korrk6uTZ3j4Iu0zT5TAbup+ges+e0gsRwLAMUylKGHriRltMbv9jgHCWUbqlFdD2fKeXhWT+yloiWPXczkfBD5jg9OzaZR+JcEzXf4A/uUasmnS3THKczfBk6HgqCAXKkF5kcaip1sp0hHxUU7lCTeh4PdUDMvvZqHniemLgWli2mmmSvQlCFV4Qy9HHT/1/iNVwEVJNb4Cw3/csGP5LBFEtfc8MG/by3t0sVp0wp+XrY4lMZ9rdZVi5O8rKZn+Qo7ZThj+QXMti6lIA839wBSmDa5KlMppitnRvF/vZllK1dDZ3S9X2VzWlrkfGNfhkGAlPz0=
