@@ -1,7 +1,7 @@
 # Site settings
 title:  Don't learn this
 description: > # this means to ignore newlines until "baseurl:"
-  Please, avoid learn this. This is only an advice you should not learn from.
+  Please, avoid learning this. This is only an advice you should not learn from.
 baseurl: ""
 url: "http://please.dontlearnthis.com"
 title_image: "http://www.gravatar.com/avatar/33c5e53bc9f904769c56ce8f12a37f07?s=500&d=mm"
