@@ -48,7 +48,7 @@ kramdown:
   hard_wrap: false
 
 permalink: pretty
-exclude: ['scripts', 'config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
 
 # Plugins
 gems:
